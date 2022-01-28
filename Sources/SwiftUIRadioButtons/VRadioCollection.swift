@@ -30,7 +30,7 @@ public struct VRadioCollection<Data, Content>: View where Data: RandomAccessColl
     }
     
     public var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             RadioCollection(selectedData: $selectedData, data: data, content: content)
         }
     }
